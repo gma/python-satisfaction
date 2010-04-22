@@ -24,8 +24,14 @@ class Topic(object):
     def url(self):
         return Topic.URL % self.topic_id
     
+    @property
     def title(self):
         return self._get().feed.title
-    
+
+    @property
     def content(self):
         return self._get().entries[0].content[0]['value']
+
+    @property
+    def reply_count(self):
+        return len(self._get().entries) - 1
