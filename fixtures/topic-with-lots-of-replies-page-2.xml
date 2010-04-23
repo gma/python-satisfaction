@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <feed 
+   xmlns="http://www.w3.org/2005/Atom" 
+   xmlns:sfn="http://api.getsatisfaction.com/schema/0.1" 
+   xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/"
+   xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>http://api.getsatisfaction.com/topics/674818</id>
+    <title>What can I do when I receive error code ej2 exception?</title>
+    
+    <updated>2010-04-23T10:06:08Z</updated>
+    <published>2009-12-17T20:27:55Z</published>
+    <link rel="self" href="http://api.getsatisfaction.com/topics/674818?page=2" type="application/atom+xml"/>
+<link rel="first" href="http://api.getsatisfaction.com/topics/674818?page=1" type="application/atom+xml"/>
+<link rel="prev" href="http://api.getsatisfaction.com/topics/674818?page=1" type="application/atom+xml"/>
+<link rel="next" href="http://api.getsatisfaction.com/topics/674818?page=3" type="application/atom+xml"/>
+<link rel="last" href="http://api.getsatisfaction.com/topics/674818?page=4" type="application/atom+xml"/>
+    
+
+    <link rel="company" href="http://api.getsatisfaction.com/companies/5801" type="text/html"/>
+    <link rel="replies" href="http://api.getsatisfaction.com/topics/674818/replies" type="application/atom+xml"/>
+    <sfn:id>674818</sfn:id>
+    
+    
+
+
+<entry>
+
+  
+  
+  
+  <id>http://api.getsatisfaction.com/topics/674818</id>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="topic_at_sfn" href="http://getsatisfaction.com/easyjet/topics/_something_has_gone_wrong_ej2_exception_when_i_try_to_pay" type="text/html"/>
+  <link rel="company" href="http://api.getsatisfaction.com/companies/5801" type="text/html"/>
+  <link rel="replies" href="http://api.getsatisfaction.com/topics/674818/replies" type="application/atom+xml"/>
+  <sfn:id>674818</sfn:id>
+  
+    
+  <title type="html">What can I do when I receive error code ej2 exception?</title>
+  <updated>2010-04-23T10:06:08Z</updated>
+  <published>2009-12-17T20:27:55Z</published>
+  
+  <author>
+   <name>chris</name>
+   <uri>http://api.getsatisfaction.com/people/913092</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>chris_639049</sfn:canonical_name>
+  </author>
+  
+  <content type="html">
+    
+    I'm trying to book a flight, but it keeps coming back with &quot;Sorry, but something has gone wrong. [ej2 exception]&quot;. It happens right at the end of the process, after I have entered my payment details and bank password thingy.&lt;br /&gt;&lt;br /&gt;
+&quot;My Easyjet&quot; isn't showing any bookings. I hope it's right, cos otherwise I've probably booked half the plane by now.
+  </content>
+  
+  <sfn:topic_style>problem</sfn:topic_style>
+  <sfn:user_defined_code>false</sfn:user_defined_code>
+  <sfn:status>complete</sfn:status>
+  <sfn:reply_count>95</sfn:reply_count>
+  <sfn:follower_count>51</sfn:follower_count>
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:me_too_count>38</sfn:me_too_count>
+  <sfn:most_recent_activity>comment</sfn:most_recent_activity>
+  
+  <sfn:tags>ej2 exception website, error code</sfn:tags>
+  
+  
+  
+</entry>
+    
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1779259</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1779259" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1779259/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1779259</sfn:id>
+  
+  <title>Bruce responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-01-14T12:17:45Z</updated>
+  <published>2010-01-14T12:17:45Z</published>
+  
+  <author>
+   <name>Bruce</name>
+   <uri>http://api.getsatisfaction.com/people/968841</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>bruce_694367</sfn:canonical_name>
+  </author>
+  <content type="html">
+    I've now wasted 2 hours of my time and my companys time trying to book.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      very angry
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1779378</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1779378" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1779378/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1779378</sfn:id>
+  
+  <title>Bruce responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-01-14T13:18:33Z</updated>
+  <published>2010-01-14T13:18:33Z</published>
+  
+  <author>
+   <name>Bruce</name>
+   <uri>http://api.getsatisfaction.com/people/968841</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>bruce_694367</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Finally booked my flight but not through the website but via a travel agent. Very annoying as had to fork out for an agents fee but at least its booked and I dont have to watch the prices tick up while I watched with envy! As a business you need to sort this problem out urgently and update your website with a clearly defined contact number should people have issues.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      frustrated
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1783316</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1783316" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1783316/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818/replies/1779378</thr:in-reply-to>
+  <sfn:id>1783316</sfn:id>
+  
+  <title>Sophie responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-01-15T10:08:44Z</updated>
+  <published>2010-01-15T10:08:44Z</published>
+  
+  <author>
+   <name>Sophie</name>
+   <uri>http://api.getsatisfaction.com/people/971113</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>sophie_696624</sfn:canonical_name>
+  </author>
+  <content type="html">
+    I am having the same problem, bloody easyjet! Did the same thing, customer services (yeah right), changed pc, changed browsers, changed currency, changed credit card no luck. Very angry!!
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1783530</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1783530" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1783530/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1783530</sfn:id>
+  
+  <title>chris responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-01-15T11:37:09Z</updated>
+  <published>2010-01-15T11:37:09Z</published>
+  
+  <author>
+   <name>chris</name>
+   <uri>http://api.getsatisfaction.com/people/913092</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>chris_639049</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Just a note to everybody here:&lt;br /&gt;&lt;br /&gt;
+This is a problem at Easyjet's end. Don't waste your time trying different browsers, cards, PCs, etc. It won't make any difference. When it eventually worked for me it was with the same combination of things at my end that got the error originally.&lt;br /&gt;&lt;br /&gt;
+The one thing that may be worth trying is booking at a time when easyjet's servers aren't so busy - late at night or early in the morning. That's pretty much a guess though.&lt;br /&gt;&lt;br /&gt;
+If a lot of people are getting this error, EJ really need to put something in the FAQ about it.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      still unimpressed
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1793467</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1793467" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1793467/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1793467</sfn:id>
+  
+  <title>John Smith responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-01-18T15:07:58Z</updated>
+  <published>2010-01-18T15:07:58Z</published>
+  
+  <author>
+   <name>John Smith</name>
+   <uri>http://api.getsatisfaction.com/people/977650</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>john_smith_703125</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Easyjet are a bunch of f**k*n w**k**s!! I've wasted so much time trying to book with them not to mention over an hour on the telephone line with no answer. I've booked with BMI and advise everyone else to look elsewhere!!
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      p*ss*d off!!
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1794678</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1794678" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1794678/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1794678</sfn:id>
+  
+  <title>Barry responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-01-18T20:12:21Z</updated>
+  <published>2010-01-18T20:12:21Z</published>
+  
+  <author>
+   <name>Barry</name>
+   <uri>http://api.getsatisfaction.com/people/967672</uri>
+   <sfn:avatar>http://s3.amazonaws.com/satisfaction-production/public/uploaded_images/3495029/barry-southpark_medium.png</sfn:avatar>
+   <sfn:canonical_name>barrymunro</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Eventually managed to get a ticket - did it on Saturday around lunch time, probably when site was less busy as Chris suggested.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      perplexed
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1807954</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1807954" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1807954/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1807954</sfn:id>
+  
+  <title>Claudio Riva responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-01-21T14:27:41Z</updated>
+  <published>2010-01-21T14:27:41Z</published>
+  
+  <author>
+   <name>Claudio Riva</name>
+   <uri>http://api.getsatisfaction.com/people/931151</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>claudio_riva</sfn:canonical_name>
+  </author>
+  <content type="html">
+    eventually (after 1 months) I have been able to book.&lt;br /&gt;
+since my first try, the price has increased by about 70€ (x 5 people= 350€).&lt;br /&gt;
+will Easyjet refund me?&lt;br /&gt;
+it's a very poor service!
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      angry
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1827860</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1827860" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1827860/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1827860</sfn:id>
+  
+  <title>James Waters responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-01-26T08:20:05Z</updated>
+  <published>2010-01-26T08:20:05Z</published>
+  
+  <author>
+   <name>James Waters</name>
+   <uri>http://api.getsatisfaction.com/people/881484</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>james_waters_607538</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Hi Claudio,&lt;br /&gt;&lt;br /&gt;
+if you had noticed that you are experiencing problems with booking on our website then you should have contacted our Customer Experience Team by &lt;a href=&quot;http://easyjet.custhelp.com/cgi-bin/easyjet.cfg/php/enduser/std_adp.php?p_faqid=3158&amp;amp;p_created=1236079692&amp;amp;p_sid=LntsCXSj&amp;amp;p_accessibility=0&amp;amp;p_redirect=&amp;amp;p_lva=&amp;amp;p_sp=cF9zcmNoPTEmcF9zb3J0X2J5PSZwX2dyaWRzb3J0PSZwX3Jvd19jbnQ9MTIsMTImcF9wcm9kcz0mcF9jYXRzPSZwX3B2PSZwX2N2PSZwX3BhZ2U9MSZwX3NlYXJjaF90ZXh0PXBob25l&amp;amp;p_li=&amp;amp;p_topview=1&quot; rel=&quot;nofollow&quot;&gt;clicking here&lt;/a&gt; to find a list of their telephone numbers.&lt;br /&gt;&lt;br /&gt;
+I would suggest you try and call our Customer Experience Team and see if they can assist you further with your request.&lt;br /&gt;&lt;br /&gt;
+Regards,&lt;br /&gt;&lt;br /&gt;
+James.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="happy" severity="1">
+      happy to help.
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1828185</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1828185" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1828185/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1828185</sfn:id>
+  
+  <title>David Brown responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-01-26T10:20:44Z</updated>
+  <published>2010-01-26T10:20:44Z</published>
+  
+  <author>
+   <name>David Brown</name>
+   <uri>http://api.getsatisfaction.com/people/915235</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>djb321</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Yeah, at a cost of 10p per minute and with waiting times up to and over half an hour.  Yes, folks, that's right - because Easyjet can't get their website to work, they think you should pay 3 pounds a telephone call to book your flights.  Oh, and according to James here, it's all your fault, because you 'should have contacted our Customer Experience Team'...
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1828189</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1828189" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1828189/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1828189</sfn:id>
+  
+  <title>David Brown responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-01-26T10:21:43Z</updated>
+  <published>2010-01-26T10:21:43Z</published>
+  
+  <author>
+   <name>David Brown</name>
+   <uri>http://api.getsatisfaction.com/people/915235</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>djb321</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Oh, and I notice that James has 'solved' this problem too.  Despite the fact that Easyjet's IT department is 'working on it', and so haven't solved it.  Still.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1828311</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1828311" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1828311/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1828311</sfn:id>
+  
+  <title>Dave Ward responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-01-26T11:19:53Z</updated>
+  <published>2010-01-26T11:19:53Z</published>
+  
+  <author>
+   <name>Dave Ward</name>
+   <uri>http://api.getsatisfaction.com/people/944499</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>daveward</sfn:canonical_name>
+  </author>
+  <content type="html">
+    We eventually booked a return train ticket for one of our flights and flybe for our other.  I would advise others do the same.&lt;br /&gt;&lt;br /&gt;
+I fully understand that websites encounter technical issues, but in the age of social media drip feeding information, stonewalling and leaving the only option as a painful wait and a £3 phone call is unforgivable. &lt;br /&gt;&lt;br /&gt;
+You have a twitter feed, live chat and use services like this, simply ignoring the issue will make customers go elsewhere. You are a human, start talking like one.&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.skyscanner.net/&quot; rel=&quot;nofollow&quot;&gt;http://www.skyscanner.net/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.thetrainline.com&quot; rel=&quot;nofollow&quot;&gt;http://www.thetrainline.com&lt;/a&gt;
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      no longer a customer
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1918553</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1918553" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1918553/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1918553</sfn:id>
+  
+  <title>kaan responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-15T15:40:25Z</updated>
+  <published>2010-02-15T15:40:25Z</published>
+  
+  <author>
+   <name>kaan</name>
+   <uri>http://api.getsatisfaction.com/people/1045710</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>kaan_770641</sfn:canonical_name>
+  </author>
+  <content type="html">
+    i m having the same problem.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      frustrated
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1918581</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1918581" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1918581/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1918581</sfn:id>
+  
+  <title>kaan responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-15T15:44:19Z</updated>
+  <published>2010-02-15T15:44:19Z</published>
+  
+  <author>
+   <name>kaan</name>
+   <uri>http://api.getsatisfaction.com/people/1045710</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>kaan_770641</sfn:canonical_name>
+  </author>
+  <content type="html">
+    i have been tring to book a flight since last two weeks.when i put my destinations and the dates than i click the search and the next page says its a error ej2 exception.that is driving me mad.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      frustrated
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1926711</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1926711" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1926711/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1926711</sfn:id>
+  
+  <title>charlotte responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-17T08:30:46Z</updated>
+  <published>2010-02-17T08:30:46Z</published>
+  
+  <author>
+   <name>charlotte</name>
+   <uri>http://api.getsatisfaction.com/people/1052079</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>charlotte_776962</sfn:canonical_name>
+  </author>
+  <content type="html">
+    same thing - can't get past the home page without error occuring and its been 4 days now!&lt;br /&gt;&lt;br /&gt;
+never experienced this before and its very frustrating - I live in Egypt so don't have many options to leave the country either!&lt;br /&gt;&lt;br /&gt;
+come on easyjet!!!!!  sort it out!
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1926924</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1926924" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1926924/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1926924</sfn:id>
+  
+  <title>James Waters responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-17T10:21:21Z</updated>
+  <published>2010-02-17T10:21:21Z</published>
+  
+  <author>
+   <name>James Waters</name>
+   <uri>http://api.getsatisfaction.com/people/881484</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>james_waters_607538</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Hi all,&lt;br /&gt;&lt;br /&gt;
+IT is focusing on this issue.&lt;br /&gt;&lt;br /&gt;
+I now would like to ask you for a favor. We need screenshots of the error messages you receive while trying to book. Would it be possible to supply us with that? The shortest way would be placing the image right here into your posting by using the &quot;Add an image&quot; button you see in the text field (lower left hand side). I hope we sort this one out very soon.&lt;br /&gt;&lt;br /&gt;
+Cheers&lt;br /&gt;
+James
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1927510</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1927510" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1927510/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1927510</sfn:id>
+  
+  <title>kaan responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-17T14:02:45Z</updated>
+  <published>2010-02-17T14:02:45Z</published>
+  
+  <author>
+   <name>kaan</name>
+   <uri>http://api.getsatisfaction.com/people/1045710</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>kaan_770641</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Sorry, but something has gone wrong. [ej2 exception] &lt;br /&gt;&lt;br /&gt;
+--------------------------------------------------------------------------------&lt;br /&gt;&lt;br /&gt;
+There are a number of reasons why this may have happened which we are working to resolve: &lt;br /&gt;
+1.You altered the currency you wish to pay by, please try booking again paying in the default currency.&lt;br /&gt;
+2.If you have reached this page after submitting your payment details we recommend you check my easyJet.com to confirm if the booking was successful before trying again. &lt;br /&gt;
+View our FAQs. &lt;br /&gt;
+ More help&lt;br /&gt;&lt;br /&gt;
+Use our live chat to talk with someone &lt;br /&gt;&lt;br /&gt;
+Alternatively you can view our FAQs. &lt;br /&gt;&lt;br /&gt;
+When contacting easyJet please mention the code ej2-exception. &lt;br /&gt;&lt;br /&gt;
+.&lt;br /&gt;
+©1997-2009 easyJet airline company ltd. All rights reserved
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1927512</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1927512" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1927512/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1927512</sfn:id>
+  
+  <title>Willy Knox responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-17T14:03:29Z</updated>
+  <published>2010-02-17T14:03:29Z</published>
+  
+  <author>
+   <name>Willy Knox</name>
+   <uri>http://api.getsatisfaction.com/people/1052599</uri>
+   <sfn:avatar>http://s3.amazonaws.com/satisfaction-production/public/uploaded_images/3698978/n553216631_5042_medium.jpg</sfn:avatar>
+   <sfn:canonical_name>willyknox</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Hi, I am having the same problem. I have been trying all morning to book some flights for my summer holidays. I have tried multiple dates and different combinations of flight paths, but same error every time. See attached screen shot.  Any extra info please let me know.  Regards, W Knox.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      frustrated
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1929184</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1929184" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1929184/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1929184</sfn:id>
+  
+  <title>Margaret Gault responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-17T20:24:40Z</updated>
+  <published>2010-02-17T20:24:40Z</published>
+  
+  <author>
+   <name>Margaret Gault</name>
+   <uri>http://api.getsatisfaction.com/people/1053454</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>margaret_gault</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Hi&lt;br /&gt;&lt;br /&gt;
+Having the same problem for about four days now , doesn't matter what time I try or what destination that I choose.  Getting exact same message as Kaan above.  Surely Easyjet this cannot be good for business try and get it sorted
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      fed up!
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1930543</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1930543" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1930543/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1930543</sfn:id>
+  
+  <title>kaan responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-18T02:07:05Z</updated>
+  <published>2010-02-18T02:07:05Z</published>
+  
+  <author>
+   <name>kaan</name>
+   <uri>http://api.getsatisfaction.com/people/1045710</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>kaan_770641</sfn:canonical_name>
+  </author>
+  <content type="html">
+    why easyjet staff doesnt do anything about this problem.i have been flying whith them almost once in every month.and when they respond it they just say they are trying to sort it out but nothing is happening.i think they dont need any customers anymore.i think we all should go for different airlines.it looks like they will never sort it out.the cant even say whats the excat problem is.i m realy dissapoint whith easyjet.
+  </content>
+  
+  <sfn:flag_count>1</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="2">
+      frustrated
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1931603</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1931603" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1931603/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1931603</sfn:id>
+  
+  <title>Willy Knox responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-18T09:58:19Z</updated>
+  <published>2010-02-18T09:58:19Z</published>
+  
+  <author>
+   <name>Willy Knox</name>
+   <uri>http://api.getsatisfaction.com/people/1052599</uri>
+   <sfn:avatar>http://s3.amazonaws.com/satisfaction-production/public/uploaded_images/3698978/n553216631_5042_medium.jpg</sfn:avatar>
+   <sfn:canonical_name>willyknox</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Hi, Not sure what OS everyone is using but I am on XP sp3.  Tried logging on as a different user and this worked fine, so something which is user specific causing the problem.  You could use this as a possible work around until problem fixed.  I would guess this should also work with Vista or Windows 7 if they exhibit this problem.  Good luck.  Willy
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      frustrated
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1931779</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1931779" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1931779/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818/replies/1929184</thr:in-reply-to>
+  <sfn:id>1931779</sfn:id>
+  
+  <title>James Waters responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-18T10:53:48Z</updated>
+  <published>2010-02-18T10:53:48Z</published>
+  
+  <author>
+   <name>James Waters</name>
+   <uri>http://api.getsatisfaction.com/people/881484</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>james_waters_607538</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Hi Margeret, you're right, issues on the website keeping customers from booking flights with us can't be good for business. Therefore we don't take it lightly, and I do hope we'll fix the issue soon. Please also read Willy Knox' posting below (two below) as this might help, too. &lt;br /&gt;
+I would also like to advise to use actual Internet Explorer version, keep this updated and delete all temporary internet files and cookies in relation to easyJet's website. This often solves the problem.&lt;br /&gt;
+Cheers, James
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1932926</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1932926" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1932926/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1932926</sfn:id>
+  
+  <title>Margaret Gault responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-18T16:16:56Z</updated>
+  <published>2010-02-18T16:16:56Z</published>
+  
+  <author>
+   <name>Margaret Gault</name>
+   <uri>http://api.getsatisfaction.com/people/1053454</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>margaret_gault</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Hi&lt;br /&gt;&lt;br /&gt;
+Have deleted all my cookies from internet explorer and at last I can at least view the Easyjet flights. will keep you posted if I can actually book the flights.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="indifferent" severity="1">
+      Heres hoping!
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1939513</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1939513" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1939513/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1939513</sfn:id>
+  
+  <title>Busy Flier responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-19T22:19:46Z</updated>
+  <published>2010-02-19T22:19:46Z</published>
+  
+  <author>
+   <name>Busy Flier</name>
+   <uri>http://api.getsatisfaction.com/people/1058641</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>imacauley</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Very annoyed, have had this problems for weeks now. Live chat person was totally ignorant to the problem and had no clue what he was talking about. I cannot seem to understand why Easyjet is not doing something about this urgently, they are loosing out BIG time and we are in the meantime very very unhappy customers!
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1939589</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1939589" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1939589/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1939589</sfn:id>
+  
+  <title>Busy Flier responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-19T22:34:25Z</updated>
+  <published>2010-02-19T22:34:25Z</published>
+  
+  <author>
+   <name>Busy Flier</name>
+   <uri>http://api.getsatisfaction.com/people/1058641</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>imacauley</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Yeah... have just managed access. Have deleted my cookes and temp. internet files and voila... it's working. Why can't Easyjet give that advise on their website under f.a.q.???
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1945782</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1945782" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1945782/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1945782</sfn:id>
+  
+  <title>Sam responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-21T16:13:59Z</updated>
+  <published>2010-02-21T16:13:59Z</published>
+  
+  <author>
+   <name>Sam</name>
+   <uri>http://api.getsatisfaction.com/people/1062948</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>sam_787764</sfn:canonical_name>
+  </author>
+  <content type="html">
+    I have had this problem too now for over a week and looks like the loive chat dont want to help either. I waited for over an hour and no answer but the chat was still open. I know lots more people with this problem and dont understand why they dont want to help. Has any one tried getting easyjet customer services at one of the airports to see if you could book through them.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1948484</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1948484" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1948484/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1948484</sfn:id>
+  
+  <title>Sam responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-22T10:25:44Z</updated>
+  <published>2010-02-22T10:25:44Z</published>
+  
+  <author>
+   <name>Sam</name>
+   <uri>http://api.getsatisfaction.com/people/1062948</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>sam_787764</sfn:canonical_name>
+  </author>
+  <content type="html">
+    I fixed my problem yesterday (ej2-exception) I deleted my web browser history and cookies and at first no difference. I then closed all the easyjet pages that were open then tried it again only this time I unticked the box that said (Preserve favorites website data). I am running Vista. No problem now it works fine. I hope this helps.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>1</sfn:star_count>
+  
+  
+  
+  
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1949245</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1949245" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1949245/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1949245</sfn:id>
+  
+  <title>Nevil Hutchinson responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-22T15:10:41Z</updated>
+  <published>2010-02-22T15:10:41Z</published>
+  
+  <author>
+   <name>Nevil Hutchinson</name>
+   <uri>http://api.getsatisfaction.com/people/1065526</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>nevil_hutchinson</sfn:canonical_name>
+  </author>
+  <content type="html">
+    I've had this message every time i've tried to book flights over the last 24 hours. I've tried from a mac and a linux machine (Firefox) but no luck.&lt;br /&gt;
+This must be bad for business!
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      frustrated
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1949668</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1949668" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1949668/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818/replies/1949245</thr:in-reply-to>
+  <sfn:id>1949668</sfn:id>
+  
+  <title>charlotte responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-22T16:33:53Z</updated>
+  <published>2010-02-22T16:33:53Z</published>
+  
+  <author>
+   <name>charlotte</name>
+   <uri>http://api.getsatisfaction.com/people/1052079</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>charlotte_776962</sfn:canonical_name>
+  </author>
+  <content type="html">
+    I still have this problem for 3 weeks now and am using  a mac - never had a problem before and don't have a problem with anyone else's websites.......  I don't see why I should have to somehow fix my computer&lt;br /&gt;
+It must be very bad for business indeed!&lt;br /&gt;
+I wanted to book 8 flights too.......
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1949705</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1949705" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1949705/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1949705</sfn:id>
+  
+  <title>Busy Flier responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-22T16:38:54Z</updated>
+  <published>2010-02-22T16:38:54Z</published>
+  
+  <author>
+   <name>Busy Flier</name>
+   <uri>http://api.getsatisfaction.com/people/1058641</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>imacauley</sfn:canonical_name>
+  </author>
+  <content type="html">
+    As I said in my previous post - I too had this problem suddenly - never had problems before. It did not go away until I deleted my cookies and temporary files and suddenly I managed to get through. I totally agree, Easyjet takes total lack of ownership for this and it does not give them any credit - just bad customer service (although so far I cannot say a bad word on their flights). Good luck for all of you who still get the error report.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>1</sfn:star_count>
+  
+  
+  
+  
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/674818/replies/1949954</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/674818/replies/1949954" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/674818" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/674818/replies/1949954/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/674818</thr:in-reply-to>
+  <sfn:id>1949954</sfn:id>
+  
+  <title>Nevil Hutchinson responded to "What can I do when I receive error code ej2 exception?"</title>
+  
+  <updated>2010-02-22T17:18:38Z</updated>
+  <published>2010-02-22T17:18:38Z</published>
+  
+  <author>
+   <name>Nevil Hutchinson</name>
+   <uri>http://api.getsatisfaction.com/people/1065526</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>nevil_hutchinson</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Clearing my cookies did the trick - but annoyingly i now have to put all my passwords, etc. in from scratch!
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      sad
+    </sfn:emotitag>
+  
+</entry>
+</feed>

@@ -47,6 +47,19 @@ class TopicTest(unittest.TestCase):
     def test_when_topic_has_several_replies_then_replies_found(self):
         self.assertEqual(3, self.topic().reply_count)
         self.assertEqual(3, len(list(self.topic().replies)))
+    
+    @unittest.skip("pending refactoring to iterator")
+    @fixture(satisfaction.Topic, "with-lots-of-replies-page-4")
+    @fixture(satisfaction.Topic, "with-lots-of-replies-page-3")
+    @fixture(satisfaction.Topic, "with-lots-of-replies-page-2")
+    @fixture(satisfaction.Topic, "with-lots-of-replies-page-1")
+    def test_when_topic_has_lots_of_replies_then_replies_found(self):
+        # self.assertEqual(95, self.topic().reply_count)
+        self.assertEqual(95, len(list(self.topic().replies)))
+    
+    @unittest.skip("can't compare content of topic to reply yet")
+    def test_when_topic_has_replies_then_topic_not_included_in_replies(self):
+        pass
 
 
 if __name__ == "__main__":
