@@ -7,8 +7,8 @@ import satisfaction
 def fixture(cls, name):
     def wrapper(test):
         def test_with_fixture(*args):
-            def stubbed_url(self, topic_id):
-                fixture = "%s-%s.xml" % (cls.__name__.lower(), name)
+            def stubbed_url(self, topic_id, page):
+                fixture = "%s-%s-page-%s.xml" % (cls.__name__.lower(), name, page)
                 return os.path.join(os.getcwd(), "fixtures", fixture)
 
             try:
@@ -37,7 +37,7 @@ class TopicTest(unittest.TestCase):
     @fixture(satisfaction.Topic, "without-replies")
     def test_when_topic_exists_then_content_available(self):
         self.assertIn("Well done!", self.topic().content)
-    
+
     @fixture(satisfaction.Topic, "without-replies")
     def test_when_topic_has_no_replies_then_no_replies_found(self):
         self.assertEqual(0, self.topic().reply_count)
@@ -48,18 +48,10 @@ class TopicTest(unittest.TestCase):
         self.assertEqual(3, self.topic().reply_count)
         self.assertEqual(3, len(list(self.topic().replies)))
     
-    @unittest.skip("pending refactoring to iterator")
-    @fixture(satisfaction.Topic, "with-lots-of-replies-page-4")
-    @fixture(satisfaction.Topic, "with-lots-of-replies-page-3")
-    @fixture(satisfaction.Topic, "with-lots-of-replies-page-2")
-    @fixture(satisfaction.Topic, "with-lots-of-replies-page-1")
+    @fixture(satisfaction.Topic, "with-lots-of-replies")
     def test_when_topic_has_lots_of_replies_then_replies_found(self):
-        # self.assertEqual(95, self.topic().reply_count)
+        self.assertEqual(95, self.topic().reply_count)
         self.assertEqual(95, len(list(self.topic().replies)))
-    
-    @unittest.skip("can't compare content of topic to reply yet")
-    def test_when_topic_has_replies_then_topic_not_included_in_replies(self):
-        pass
 
 
 if __name__ == "__main__":
