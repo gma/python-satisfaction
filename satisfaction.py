@@ -16,13 +16,14 @@ class Topic(object):
     
     def _get(self):
         if self.document is None:
-            self.document = feedparser.parse(self.url())
-        if self.document.status == 404:
+            self.document = feedparser.parse(self.url(self.topic_id))
+        if self.document.get("status", None) == 404:
             raise ResourceNotFound("Topic not found: %s" % self.topic_id)
         return self.document
     
-    def url(self):
-        return Topic.URL % self.topic_id
+    @staticmethod
+    def url(topic_id):
+        return Topic.URL % topic_id
     
     @property
     def title(self):
@@ -34,4 +35,8 @@ class Topic(object):
 
     @property
     def reply_count(self):
-        return len(self._get().entries) - 1
+        return len(self.replies)
+
+    @property
+    def replies(self):
+        return self._get().entries[1:]

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <feed 
+   xmlns="http://www.w3.org/2005/Atom" 
+   xmlns:sfn="http://api.getsatisfaction.com/schema/0.1" 
+   xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/"
+   xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>http://api.getsatisfaction.com/topics/397900</id>
+    <title>Finding KEI</title>
+    
+    <updated>2009-08-19T07:40:01Z</updated>
+    <published>2009-05-04T04:18:06Z</published>
+    <link rel="self" href="http://api.getsatisfaction.com/topics/397900?page=1" type="application/atom+xml"/>
+<link rel="first" href="http://api.getsatisfaction.com/topics/397900?page=1" type="application/atom+xml"/>
+<link rel="last" href="http://api.getsatisfaction.com/topics/397900?page=1" type="application/atom+xml"/>
+    
+
+    <link rel="company" href="http://api.getsatisfaction.com/companies/30884" type="text/html"/>
+    <link rel="replies" href="http://api.getsatisfaction.com/topics/397900/replies" type="application/atom+xml"/>
+    <sfn:id>397900</sfn:id>
+    
+    
+
+
+<entry>
+
+  
+  
+  
+  <id>http://api.getsatisfaction.com/topics/397900</id>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/397900" type="application/atom+xml"/>
+  <link rel="topic_at_sfn" href="http://getsatisfaction.com/wordtracker/topics/finding_kei" type="text/html"/>
+  <link rel="company" href="http://api.getsatisfaction.com/companies/30884" type="text/html"/>
+  <link rel="replies" href="http://api.getsatisfaction.com/topics/397900/replies" type="application/atom+xml"/>
+  <sfn:id>397900</sfn:id>
+  
+    
+  <title type="html">Finding KEI</title>
+  <updated>2009-08-19T07:40:01Z</updated>
+  <published>2009-05-04T04:18:06Z</published>
+  
+  <author>
+   <name>ray sherman</name>
+   <uri>http://api.getsatisfaction.com/people/553157</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>ray_sherman</sfn:canonical_name>
+  </author>
+  
+  <content type="html">
+    
+    How do you find kEI with this new version?
+  </content>
+  
+  <sfn:topic_style>question</sfn:topic_style>
+  <sfn:user_defined_code>false</sfn:user_defined_code>
+  <sfn:status></sfn:status>
+  <sfn:reply_count>3</sfn:reply_count>
+  <sfn:follower_count>5</sfn:follower_count>
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:me_too_count>3</sfn:me_too_count>
+  <sfn:most_recent_activity>comment</sfn:most_recent_activity>
+  
+  <sfn:tags></sfn:tags>
+  
+  
+  
+</entry>
+    
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/397900/replies/1060959</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/397900/replies/1060959" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/397900" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/397900/replies/1060959/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/397900</thr:in-reply-to>
+  <sfn:id>1060959</sfn:id>
+  
+  <title>Mal Darwen responded to "Finding KEI"</title>
+  
+  <updated>2009-05-05T09:22:05Z</updated>
+  <published>2009-05-05T09:22:05Z</published>
+  
+  <author>
+   <name>Mal Darwen</name>
+   <uri>http://api.getsatisfaction.com/people/508365</uri>
+   <sfn:avatar>http://s3.amazonaws.com/satisfaction-production/public/uploaded_images/2787645/malthumb_medium.jpg</sfn:avatar>
+   <sfn:canonical_name>mal_darwen</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Hi Ray, &lt;br /&gt;&lt;br /&gt;
+thanks for writing. The beta version of the new tool does not give a calculation of KEI (keyword effectiveness index) which has traditionally been used to rank keywords. &lt;br /&gt;
+We have been testing more effective metrics to allow you to rank keywords and this will soon be included in the new tool.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>1</sfn:star_count>
+  
+  
+  <sfn:company_promoted />
+  
+  
+    <sfn:emotitag face="happy" severity="1">
+      
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/397900/replies/1313227</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/397900/replies/1313227" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/397900" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/397900/replies/1313227/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/397900</thr:in-reply-to>
+  <sfn:id>1313227</sfn:id>
+  
+  <title>Michael Chou responded to "Finding KEI"</title>
+  
+  <updated>2009-08-19T03:48:12Z</updated>
+  <published>2009-08-19T03:48:12Z</published>
+  
+  <author>
+   <name>Michael Chou</name>
+   <uri>http://api.getsatisfaction.com/people/693397</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>michael_chou</sfn:canonical_name>
+  </author>
+  <content type="html">
+    when?!?!?
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="sad" severity="1">
+      sad
+    </sfn:emotitag>
+  
+</entry>
+
+
+<entry>
+
+
+  <id>http://api.getsatisfaction.com/topics/397900/replies/1313567</id>
+  <link rel="reply" href="http://api.getsatisfaction.com/topics/397900/replies/1313567" type="application/atom+xml"/>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/397900" type="application/atom+xml"/>
+  <link rel="stars" href="http://api.getsatisfaction.com/topics/397900/replies/1313567/stars" type="application/atom+xml"/>
+  
+  <thr:in-reply-to>http://api.getsatisfaction.com/topics/397900</thr:in-reply-to>
+  <sfn:id>1313567</sfn:id>
+  
+  <title>Mal Darwen responded to "Finding KEI"</title>
+  
+  <updated>2009-08-19T07:40:01Z</updated>
+  <published>2009-08-19T07:40:01Z</published>
+  
+  <author>
+   <name>Mal Darwen</name>
+   <uri>http://api.getsatisfaction.com/people/508365</uri>
+   <sfn:avatar>http://s3.amazonaws.com/satisfaction-production/public/uploaded_images/2787645/malthumb_medium.jpg</sfn:avatar>
+   <sfn:canonical_name>mal_darwen</sfn:canonical_name>
+  </author>
+  <content type="html">
+    Hi Michael, &lt;br /&gt;&lt;br /&gt;
+we don't have a firm date for the introduction of these metrics yet - we're still assessing which will be the most effective to include in the tool, but this is likely to be in the next few months.
+  </content>
+  
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:star_count>0</sfn:star_count>
+  
+  
+  
+  
+  
+    <sfn:emotitag face="happy" severity="1">
+      happy
+    </sfn:emotitag>
+  
+</entry>
+</feed>

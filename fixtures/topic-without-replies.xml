@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <feed 
+   xmlns="http://www.w3.org/2005/Atom" 
+   xmlns:sfn="http://api.getsatisfaction.com/schema/0.1" 
+   xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/"
+   xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>http://api.getsatisfaction.com/topics/409678</id>
+    <title>Fantastic improvement</title>
+    
+    <updated>2009-05-14T17:42:27Z</updated>
+    <published>2009-05-14T17:42:27Z</published>
+    <link rel="self" href="http://api.getsatisfaction.com/topics/409678?page=1" type="application/atom+xml"/>
+<link rel="first" href="http://api.getsatisfaction.com/topics/409678?page=1" type="application/atom+xml"/>
+<link rel="last" href="http://api.getsatisfaction.com/topics/409678?page=1" type="application/atom+xml"/>
+    
+
+    <link rel="company" href="http://api.getsatisfaction.com/companies/30884" type="text/html"/>
+    <link rel="replies" href="http://api.getsatisfaction.com/topics/409678/replies" type="application/atom+xml"/>
+    <sfn:id>409678</sfn:id>
+    
+    
+
+
+<entry>
+
+  
+  
+  
+  <id>http://api.getsatisfaction.com/topics/409678</id>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/409678" type="application/atom+xml"/>
+  <link rel="topic_at_sfn" href="http://getsatisfaction.com/wordtracker/topics/fantastic_improvement" type="text/html"/>
+  <link rel="company" href="http://api.getsatisfaction.com/companies/30884" type="text/html"/>
+  <link rel="replies" href="http://api.getsatisfaction.com/topics/409678/replies" type="application/atom+xml"/>
+  <sfn:id>409678</sfn:id>
+  
+    
+  <title type="html">Fantastic improvement</title>
+  <updated>2009-05-14T17:42:27Z</updated>
+  <published>2009-05-14T17:42:27Z</published>
+  
+  <author>
+   <name>Mark</name>
+   <uri>http://api.getsatisfaction.com/people/565338</uri>
+   <sfn:avatar>http://getsatisfaction.comhttp://s3.amazonaws.com/satisfaction-production/public/uploaded_images/2820949/1970_medium.JPG</sfn:avatar>
+   <sfn:canonical_name>mark_293104</sfn:canonical_name>
+  </author>
+  
+  <content type="html">
+    
+    Fantastic improvement over the previous interface. Well done!
+  </content>
+  
+  <sfn:topic_style>praise</sfn:topic_style>
+  <sfn:user_defined_code>false</sfn:user_defined_code>
+  <sfn:status></sfn:status>
+  <sfn:reply_count>0</sfn:reply_count>
+  <sfn:follower_count>1</sfn:follower_count>
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:me_too_count>1</sfn:me_too_count>
+  <sfn:most_recent_activity>create</sfn:most_recent_activity>
+  
+  <sfn:tags></sfn:tags>
+  
+  
+  
+</entry>
+    
+</feed>
