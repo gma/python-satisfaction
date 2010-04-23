@@ -17,7 +17,7 @@ class Reply(Resource):
         self.parent = parent
         
     def __iter__(self):
-        for entry in self.parent._get().entries[1:]:
+        for entry in self.parent.document.entries[1:]:
             yield entry
     
 
@@ -27,23 +27,24 @@ class Topic(Resource):
     
     def __init__(self, resource_id):
         self.resource_id = resource_id
-        self.document = None
+        self._document = None
     
-    def _get(self):
-        if self.document is None:
-            self.document = feedparser.parse(self.url(self.resource_id))
-        if self.document.get("status", None) == 404:
+    @property
+    def document(self):
+        if self._document is None:
+            self._document = feedparser.parse(self.url(self.resource_id))
+        if self._document.get("status", None) == 404:
             name = self.__class__.__name__
             raise ResourceNotFound("%s not found: %s" % (name, self.resource_id))
-        return self.document
+        return self._document
     
     @property
     def title(self):
-        return self._get().feed.title
+        return self.document.feed.title
 
     @property
     def content(self):
-        return self._get().entries[0].content[0]['value']
+        return self.document.entries[0].content[0]['value']
 
     @property
     def reply_count(self):
