@@ -16,9 +16,14 @@ class TestHelper(unittest.TestCase):
             for cls, func in self.original_functions:
                 cls.url = func
     
-    def useFixture(self, cls, name):
-        def stubbed_url(self, topic_id, page):
-            filename = '%s-%s-page-%s.xml' % (cls.__name__.lower(), name, page)
+    def useFixture(self, cls, name=None):
+        def stubbed_url(self, topic_id, page=None):
+            filename = cls.__name__.lower()
+            if name:
+                filename += '-%s' % name
+            if page:
+                filename += '-page-%s' % page
+            filename += '.xml'
             return os.path.join(os.getcwd(), 'fixtures', filename)
         self.original_functions.append((cls, cls.url))
         cls.url = stubbed_url
@@ -26,7 +31,14 @@ class TestHelper(unittest.TestCase):
     def topic(self):
         # TODO: topic id is ignored in tests - does it work?
         return satisfaction.Topic('1234')
+
+
+class MissingProductTest(TestHelper):
     
+    def test_product_not_found(self):
+        with self.assertRaises(satisfaction.ResourceNotFound):
+            satisfaction.Product('bad_product_name').title
+
 
 class MissingTopicTest(TestHelper):
 
@@ -35,7 +47,7 @@ class MissingTopicTest(TestHelper):
             self.topic().title
     
 
-class TopicWithNoRepliesTest(TestHelper):
+class TopicWithoutRepliesTest(TestHelper):
     
     def withFixtures(self):
         self.useFixture(satisfaction.Topic, 'without-replies')
