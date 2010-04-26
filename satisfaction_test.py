@@ -16,17 +16,17 @@ class TestHelper(unittest.TestCase):
             for cls, func in self.original_functions:
                 cls.url = func
     
-    def useFixture(self, cls, name=None):
-        def stubbed_url(self, resource_id, page=None):
-            filename = cls.__name__.lower()
+    def useFixture(self, stubbed_cls, name=None):
+        def stubbed_url(cls, resource_id, page=None):
+            filename = stubbed_cls.__name__.lower()
             if name:
                 filename += '-%s' % name
             if page:
                 filename += '-page-%s' % page
             filename += '.xml' if name else '.html'
             return os.path.join(os.getcwd(), 'fixtures', filename)
-        self.original_functions.append((cls, cls.url))
-        cls.url = stubbed_url
+        self.original_functions.append((stubbed_cls, stubbed_cls.url))
+        stubbed_cls.url = classmethod(stubbed_url)
 
     def product(self):
         return satisfaction.Product('1234')

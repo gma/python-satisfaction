@@ -7,64 +7,28 @@ import lxml.html
 class ResourceNotFound(RuntimeError): pass
 
 
-class Resource:
+class Parser:
     
-    def __init__(self, resource_id):
-        self.resource_id = resource_id
+    def __init__(self, resource):
         self._document = None
-    
-    @classmethod
-    def url(cls, resource_id, page=None):
-        url = cls.URL % resource_id
-        if page:
-            url += '?page=%s' % page
-        return url
-    
-    def resource_not_found(self):
-        name = self.__class__.__name__
-        raise ResourceNotFound('%s not found: %s' % (name, self.resource_id))
-    
+        self.resource = resource
+
     @property
     def document(self):
         if self._document is None:
             self.load_document()
         return self._document
     
-
-class AtomParser:
-    
-    def load_document(self):
-        document = feedparser.parse(self.url(self.resource_id, self._page))
-        if document.get('status', None) == 404:
-            self.resource_not_found()
-        self._document = document
-    
-
-class HtmlParser:
-    
-    def load_document(self):
-        response = urllib.urlopen(self.url(self.resource_id))
-        if response.headers.getheader('status') == '404':
-            self.resource_not_found()
-        self._document = lxml.html.document_fromstring(response.read())
-    
-
-class Product(Resource, HtmlParser):
-
-    URL = 'http://api.getsatisfaction.com/products/%s'
-
-    @property
-    def title(self):
-        return self.document.cssselect('a.name')[0].text_content()
+    def resource_not_found(self):
+        # TODO: report which resource wasn't found
+        raise ResourceNotFound()
 
 
-class Topic(Resource, AtomParser):
-    
-    URL = 'http://api.getsatisfaction.com/topics/%s'
+class AtomParser(Parser):
     
     def __init__(self, *args):
-        Resource.__init__(self, *args)
-        self._page = 1
+        Parser.__init__(self, *args)
+        self.page = 1
     
     def __iter__(self):
         while True:
@@ -74,18 +38,73 @@ class Topic(Resource, AtomParser):
                 self.load_next_page()
             else:
                 raise StopIteration
-    
+
     def page_number(self, page_type):
         link_tag_for_type = lambda link: link['rel'] == page_type
         url = filter(link_tag_for_type, self.document.feed.links)[0]['href']
         return int(url.split('=')[-1])
-    
+
     def more_pages_to_load(self):
         return self.page_number('self') < self.page_number('last')
-    
+
     def load_next_page(self):
         self._document = None
-        self._page += 1
+        self.page += 1
+    
+    def load_document(self):
+        url = self.resource.url(self.resource.resource_id, self.page)
+        document = feedparser.parse(url)
+        if document.get('status', None) == 404:
+            self.resource_not_found()
+        self._document = document
+
+
+class HtmlParser(Parser):
+    
+    def load_document(self):
+        response = urllib.urlopen(self.resource.url(self.resource.resource_id))
+        if response.headers.getheader('status') == '404':
+            self.resource_not_found()
+        self._document = lxml.html.document_fromstring(response.read())
+    
+
+class Resource:
+    
+    def __init__(self, resource_id):
+        self.resource_id = resource_id
+    
+    @classmethod
+    def url(cls, resource_id, page=None):
+        url = cls.URL % resource_id
+        if page:
+            url += '?page=%s' % page
+        return url
+    
+    @property
+    def document(self):
+        return self.parser.document
+
+
+class Product(Resource):
+
+    URL = 'http://api.getsatisfaction.com/products/%s'
+
+    def __init__(self, *args):
+        Resource.__init__(self, *args)
+        self.parser = HtmlParser(self)
+
+    @property
+    def title(self):
+        return self.document.cssselect('a.name')[0].text_content()
+
+
+class Topic(Resource):
+    
+    URL = 'http://api.getsatisfaction.com/topics/%s'
+    
+    def __init__(self, *args):
+        Resource.__init__(self, *args)
+        self.parser = AtomParser(self)
     
     @property
     def title(self):
@@ -101,4 +120,4 @@ class Topic(Resource, AtomParser):
 
     @property
     def replies(self):
-        return iter(self)
+        return iter(self.parser)
