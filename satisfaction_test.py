@@ -8,25 +8,27 @@ class TestHelper(unittest.TestCase):
     
     def setUp(self):
         if hasattr(self, 'withFixtures'):
-            self.original_functions = []
+            self.original_urls = []
             self.withFixtures()
     
     def tearDown(self):
-        if hasattr(self, 'original_functions'):
-            for cls, func in self.original_functions:
-                cls.url = func
+        if hasattr(self, 'real_atom_url_func'):
+            satisfaction.AtomParser.url_for_page = self.real_atom_url_func
+        if hasattr(self, 'original_urls'):
+            for cls, func in self.original_urls:
+                cls.URL = func
     
     def useFixture(self, stubbed_cls, name=None):
-        def stubbed_url(cls, resource_id, page=None):
-            filename = stubbed_cls.__name__.lower()
-            if name:
-                filename += '-%s' % name
-            if page:
-                filename += '-page-%s' % page
-            filename += '.xml' if name else '.html'
-            return os.path.join(os.getcwd(), 'fixtures', filename)
-        self.original_functions.append((stubbed_cls, stubbed_cls.url))
-        stubbed_cls.url = classmethod(stubbed_url)
+        if not hasattr(self, 'real_atom_url_func'):
+            def stub_url_func(self, url, page):
+                return '%s-page-%s.xml' % (url.rsplit('.', 1)[0], page)
+            self.real_atom_url_func = satisfaction.AtomParser.url_for_page
+            satisfaction.AtomParser.url_for_page = stub_url_func
+
+        self.original_urls.append((stubbed_cls, stubbed_cls.URL))
+        base = stubbed_cls.__name__.lower()
+        filename = '%s-%s.xml' % (base, name) if name else '%s.html' % base
+        stubbed_cls.URL = os.path.join(os.getcwd(), 'fixtures', filename)
 
     def product(self):
         return satisfaction.Product('1234')
@@ -43,13 +45,17 @@ class MissingProductTest(TestHelper):
             satisfaction.Product('bad_product_name').title
 
 
-class ProductTest(TestHelper):
+class ProductWithTopicsTest(TestHelper):
     
     def withFixtures(self):
         self.useFixture(satisfaction.Product)
     
-    def test_when_product_exists_then_can_retrieve_title(self):
+    def test_can_retrieve_title(self):
         self.assertEqual('Wordtracker Keywords', self.product().title)
+    
+    @unittest.skip("pending url refactoring")
+    def test_can_retrieve_topics(self):
+        self.assertEqual(3, len(list(self.product().topics)))
 
 
 class MissingTopicTest(TestHelper):

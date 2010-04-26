@@ -9,9 +9,9 @@ class ResourceNotFound(RuntimeError): pass
 
 class Parser:
     
-    def __init__(self, resource):
+    def __init__(self, url):
         self._document = None
-        self.resource = resource
+        self.url = url
 
     @property
     def document(self):
@@ -51,9 +51,12 @@ class AtomParser(Parser):
         self._document = None
         self.page += 1
     
+    @staticmethod
+    def url_for_page(url, page):
+        return url + '?page=%s' % page
+    
     def load_document(self):
-        url = self.resource.url(self.resource.resource_id, self.page)
-        document = feedparser.parse(url)
+        document = feedparser.parse(self.url_for_page(self.url, self.page))
         if document.get('status', None) == 404:
             self.resource_not_found()
         self._document = document
@@ -62,7 +65,7 @@ class AtomParser(Parser):
 class HtmlParser(Parser):
     
     def load_document(self):
-        response = urllib.urlopen(self.resource.url(self.resource.resource_id))
+        response = urllib.urlopen(self.url)
         if response.headers.getheader('status') == '404':
             self.resource_not_found()
         self._document = lxml.html.document_fromstring(response.read())
@@ -73,12 +76,9 @@ class Resource:
     def __init__(self, resource_id):
         self.resource_id = resource_id
     
-    @classmethod
-    def url(cls, resource_id, page=None):
-        url = cls.URL % resource_id
-        if page:
-            url += '?page=%s' % page
-        return url
+    @property
+    def url(self):
+        return self.URL % {'id': self.resource_id}
     
     @property
     def document(self):
@@ -87,24 +87,28 @@ class Resource:
 
 class Product(Resource):
 
-    URL = 'http://api.getsatisfaction.com/products/%s'
+    URL = 'http://api.getsatisfaction.com/products/%(id)s'
 
     def __init__(self, *args):
         Resource.__init__(self, *args)
-        self.parser = HtmlParser(self)
+        self.parser = HtmlParser(self.url)
 
     @property
     def title(self):
         return self.document.cssselect('a.name')[0].text_content()
+    
+    # @property
+    # def topics(self):
+    #     return iter(AtomParser(self.url + "/topics"))
 
 
 class Topic(Resource):
     
-    URL = 'http://api.getsatisfaction.com/topics/%s'
+    URL = 'http://api.getsatisfaction.com/topics/%(id)s'
     
     def __init__(self, *args):
         Resource.__init__(self, *args)
-        self.parser = AtomParser(self)
+        self.parser = AtomParser(self.url)
     
     @property
     def title(self):
