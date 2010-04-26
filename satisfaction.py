@@ -19,9 +19,8 @@ class Parser:
             self.load_document()
         return self._document
     
-    def resource_not_found(self):
-        # TODO: report which resource wasn't found
-        raise ResourceNotFound()
+    def resource_not_found(self, url):
+        raise ResourceNotFound(url)
 
 
 class HtmlParser(Parser):
@@ -29,7 +28,7 @@ class HtmlParser(Parser):
     def load_document(self):
         response = urllib.urlopen(self.url)
         if response.headers.getheader('status') == '404':
-            self.resource_not_found()
+            self.resource_not_found(self.url)
         self._document = lxml.html.document_fromstring(response.read())
 
 
@@ -66,9 +65,10 @@ class AtomParser(Parser):
         return self.url + '?page=%s' % page
     
     def load_document(self):
-        document = feedparser.parse(self.url_for_page(self.page))
+        url = self.url_for_page(self.page)
+        document = feedparser.parse(url)
         if document.get('status', None) == 404:
-            self.resource_not_found()
+            self.resource_not_found(url)
         self._document = document
 
 
