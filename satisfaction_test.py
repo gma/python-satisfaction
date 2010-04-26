@@ -17,16 +17,19 @@ class TestHelper(unittest.TestCase):
                 cls.url = func
     
     def useFixture(self, cls, name=None):
-        def stubbed_url(self, topic_id, page=None):
+        def stubbed_url(self, resource_id, page=None):
             filename = cls.__name__.lower()
             if name:
                 filename += '-%s' % name
             if page:
                 filename += '-page-%s' % page
-            filename += '.xml'
+            filename += '.xml' if name else '.html'
             return os.path.join(os.getcwd(), 'fixtures', filename)
         self.original_functions.append((cls, cls.url))
         cls.url = stubbed_url
+
+    def product(self):
+        return satisfaction.Product('1234')
 
     def topic(self):
         # TODO: topic id is ignored in tests - does it work?
@@ -38,6 +41,15 @@ class MissingProductTest(TestHelper):
     def test_product_not_found(self):
         with self.assertRaises(satisfaction.ResourceNotFound):
             satisfaction.Product('bad_product_name').title
+
+
+class ProductTest(TestHelper):
+    
+    def withFixtures(self):
+        self.useFixture(satisfaction.Product)
+    
+    def test_when_product_exists_then_can_retrieve_title(self):
+        self.assertEqual('Wordtracker Keywords', self.product().title)
 
 
 class MissingTopicTest(TestHelper):

@@ -46,7 +46,7 @@ class HtmlParser:
         response = urllib.urlopen(self.url(self.resource_id))
         if response.headers.getheader('status') == '404':
             self.resource_not_found()
-        self._document = lxml.html.document_fromstring(html)
+        self._document = lxml.html.document_fromstring(response.read())
     
 
 class Product(Resource, HtmlParser):
@@ -55,7 +55,7 @@ class Product(Resource, HtmlParser):
 
     @property
     def title(self):
-        return self.document.cssselect('a.name').text_content()
+        return self.document.cssselect('a.name')[0].text_content()
 
 
 class Topic(Resource, AtomParser):
