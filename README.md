@@ -47,7 +47,7 @@ For example, if we're only interested in the first 4 topics we can use the `enum
     Username Clashes With Twitter API Product...
     I cant change my background - too many tweets for last 36 ho...
 
-Note that we instantiated the `api` object by passing it's identifier ('twitter_api') into a new instance of the `Product` class. We could just as easily have used the existing `product` object from the previous example, but I wanted to demonstrate how to reference a product by combining the brand and product name into a lower case string.
+Note that we instantiated the `api` object by passing its identifier ('twitter_api') into a new instance of the `Product` class. We could just as easily have used the existing `product` object from the previous example, but I wanted to demonstrate how to reference a product by combining the brand and product name into a lower case string.
 
 A more flexible alternative to the `enumerate()` function is the `itertools.islice()` function:
 
