@@ -5,7 +5,6 @@ import mock
 
 import satisfaction
 
-
 def urlopen_404(url):
     headers = mock.Mock()
     headers.getheader.return_value = '404'
@@ -42,8 +41,6 @@ class TestHelper(unittest.TestCase):
             self.stub_method(satisfaction.Resource, 'child_url', child_url)
     
     def tearDown(self):
-        if hasattr(self, 'real_atom_url_func'):
-            satisfaction.AtomParser.url_for_page = self.real_atom_url_func
         if hasattr(self, 'original_methods'):
             for cls, method in self.original_methods:
                 setattr(cls, method.__name__, method)

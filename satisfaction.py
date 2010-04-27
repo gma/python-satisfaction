@@ -21,9 +21,6 @@ class Parser:
         if self._document is None:
             self.load_document()
         return self._document
-    
-    def resource_not_found(self, url):
-        raise ResourceNotFound(url)
 
 
 class HtmlParser(Parser):
@@ -31,8 +28,11 @@ class HtmlParser(Parser):
     def load_document(self):
         response = urllib.urlopen(self.url)
         if response.headers.getheader('status') == '404':
-            self.resource_not_found(self.url)
+            raise ResourceNotFound(self.url)
         self._document = lxml.html.document_fromstring(response.read())
+    
+    def title(self):
+        return self.document.cssselect('title')[0].text_content()
     
     def __iter__(self):
         while True:
@@ -77,8 +77,11 @@ class AtomParser(Parser):
     def load_document(self):
         document = feedparser.parse(self.url_for_page())
         if document.get('status', None) == 404:
-            self.resource_not_found(self.url_for_page())
+            raise ResourceNotFound(self.url_for_page())
         self._document = document
+    
+    def first_entry(self):
+        return self.document.entries[0]
 
 
 class Resource:
@@ -91,17 +94,13 @@ class Resource:
     
     def child_url(self, resource):
         return '%s/%s' % (self.url(), resource)
-    
-    @property
-    def document(self):
-        return self.parser.document
 
 
 class HtmlResource(Resource):
     
     @property
     def title(self):
-        return self.document.cssselect('title')[0].text_content()
+        return self.parser.title()
 
 
 class AtomResource(Resource):
@@ -119,7 +118,7 @@ class AtomResource(Resource):
     @property
     def entry(self):
         if self._entry is None:
-            self._entry = self.document.entries[0]
+            self._entry = self.parser.first_entry()
         return self._entry
 
 
