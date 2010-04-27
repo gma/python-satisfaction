@@ -37,7 +37,8 @@ class TestHelper(unittest.TestCase):
             self.stub_method(satisfaction.AtomParser, 'url_for_page', url_for_page)
         
             def child_url(self, resource):
-                return '%s-%s.xml' % (self.url().rsplit('.', 1)[0], resource)
+                base, ext = self.url().rsplit('.', 1)
+                return '%s-%s.%s' % (base, resource, ext)
             self.stub_method(satisfaction.Resource, 'child_url', child_url)
     
     def tearDown(self):
@@ -56,11 +57,36 @@ class TestHelper(unittest.TestCase):
         filename = '%s-%s.xml' % (base, name) if name else '%s.html' % base
         stubbed_cls.URL = os.path.join(os.getcwd(), 'fixtures', filename)
     
+    def company(self):
+        return satisfaction.Company('wordtracker')
+    
     def product(self):
         return satisfaction.Product('1234')
     
     def topic(self):
         return satisfaction.Topic('1234')
+
+
+class MissingCompanyTest(TestHelper):
+    
+    @mock.patch('urllib.urlopen', urlopen_404)
+    def test_company_not_found(self):
+        with self.assertRaises(satisfaction.ResourceNotFound):
+            self.company().title
+
+
+class CompanyWithProductsTest(TestHelper):
+    
+    def withFixtures(self):
+        self.useFixture(satisfaction.Company)
+    
+    def test_has_title(self):
+        self.assertEqual('Wordtracker', self.company().title)
+    
+    def test_can_iterate_over_companies(self):
+        products = list(self.company().products)
+        self.assertEqual(4, len(products))
+        self.assertIsInstance(products[0], satisfaction.Product)
 
 
 class MissingProductTest(TestHelper):
@@ -83,8 +109,9 @@ class ProductWithTopicsTest(TestHelper):
         self.assertEqual(3, self.product().topic_count)
     
     def test_can_iterate_over_topics(self):
-        self.assertEqual(3, len(list(self.product().topics)))
-        self.assertIsInstance(list(self.product().topics)[0], satisfaction.Topic)
+        topics = list(self.product().topics)
+        self.assertEqual(3, len(topics))
+        self.assertIsInstance(topics[0], satisfaction.Topic)
 
 
 class MissingTopicTest(TestHelper):
@@ -120,8 +147,9 @@ class TopicWithRepliesTest(TestHelper):
         self.assertEqual(3, self.topic().reply_count)
     
     def test_can_iterate_over_replies(self):
-        self.assertEqual(3, len(list(self.topic().replies)))
-        self.assertIsInstance(list(self.topic().replies)[0], satisfaction.Reply)
+        replies = list(self.topic().replies)
+        self.assertEqual(3, len(replies))
+        self.assertIsInstance(replies[0], satisfaction.Reply)
     
     def test_topic_not_included_in_replies(self):
         replies = map(lambda reply: reply.content, self.topic().replies)
@@ -133,9 +161,13 @@ class TopicWithMultiplePagesOfRepliesTest(TestHelper):
     def withFixtures(self):
         self.useFixture(satisfaction.Topic, 'with-lots-of-replies')
     
-    def test_replies_found(self):
+    def test_can_count_replies(self):
         self.assertEqual(95, self.topic().reply_count)
-        self.assertEqual(95, len(list(self.topic().replies)))
+    
+    def test_can_iterate_over_replies(self):
+        replies = list(self.topic().replies)
+        self.assertEqual(95, len(replies))
+        self.assertIsInstance(replies[0], satisfaction.Reply)
 
 
 if __name__ == '__main__':

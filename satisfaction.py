@@ -4,13 +4,16 @@ import feedparser
 import lxml.html
 
 
-class ResourceNotFound(RuntimeError): pass
+class ResourceNotFound(RuntimeError):
+    
+    pass
 
 
 class Parser:
     
-    def __init__(self, url):
+    def __init__(self, url, child_cls=None):
         self.url = url
+        self.child_cls = child_cls
         self._document = None
     
     @property
@@ -30,13 +33,19 @@ class HtmlParser(Parser):
         if response.headers.getheader('status') == '404':
             self.resource_not_found(self.url)
         self._document = lxml.html.document_fromstring(response.read())
+    
+    def __iter__(self):
+        while True:
+            for tag in self.document.cssselect('div.hproduct a.name'):
+                resource_id = tag.get('href').rsplit('/')[-1]
+                yield self.child_cls(resource_id)
+            raise StopIteration
 
 
 class AtomParser(Parser):
     
-    def __init__(self, url, cls, first_child_entry=0):
-        Parser.__init__(self, url)
-        self.child_cls = cls
+    def __init__(self, url, child_cls, first_child_entry=0):
+        Parser.__init__(self, url, child_cls)
         self.first_child_entry = first_child_entry
         self.page = 1
     
@@ -62,7 +71,7 @@ class AtomParser(Parser):
         self._document = None
         self.page += 1
     
-    def url_for_page():
+    def url_for_page(self):
         return self.url + '?page=%s' % self.page
     
     def load_document(self):
@@ -81,12 +90,18 @@ class Resource:
         return self.URL % {'id': self.resource_id}
     
     def child_url(self, resource):
-        print '%s/%s' % (self.url, resource)
-        return '%s/%s' % (self.url, resource)
+        return '%s/%s' % (self.url(), resource)
     
     @property
     def document(self):
         return self.parser.document
+
+
+class HtmlResource(Resource):
+    
+    @property
+    def title(self):
+        return self.document.cssselect('title')[0].text_content()
 
 
 class AtomResource(Resource):
@@ -97,7 +112,7 @@ class AtomResource(Resource):
     
     @classmethod
     def from_entry(cls, entry):
-        resource = cls(entry.id)
+        resource = cls(entry.id.split('/')[-1])
         resource._entry = entry
         return resource
     
@@ -108,18 +123,27 @@ class AtomResource(Resource):
         return self._entry
 
 
-class Product(Resource):
+class Company(HtmlResource):
+    
+    URL = 'http://api.getsatisfaction.com/companies/%(id)s'
+    
+    def __init__(self, resource_id):
+        HtmlResource.__init__(self, resource_id)
+        self.parser = HtmlParser(self.url())
+    
+    @property
+    def products(self):
+        return iter(HtmlParser(self.child_url('products'), Product))
+
+
+class Product(HtmlResource):
     
     URL = 'http://api.getsatisfaction.com/products/%(id)s'
     
-    def __init__(self, *args):
-        Resource.__init__(self, *args)
+    def __init__(self, resource_id):
+        HtmlResource.__init__(self, resource_id)
         self.parser = HtmlParser(self.url())
         self._topic_parser = None
-    
-    @property
-    def title(self):
-        return self.document.cssselect('a.name')[0].text_content()
     
     @property
     def topic_parser(self):
