@@ -12,7 +12,7 @@ def urlopen_404(url):
     response = mock.Mock()
     response.headers = headers
     return response
-    
+
 
 def feedparser_404(url):
     return {'status': 404}
@@ -30,10 +30,10 @@ class TestHelper(unittest.TestCase):
         self.original_methods = []
         if hasattr(self, 'withFixtures'):
             self.withFixtures()
-
+        
         if len(self.original_methods) == 0:
-            def url_for_page(self, page):
-                return '%s-page-%s.xml' % (self.url.rsplit('.', 1)[0], page)
+            def url_for_page(self):
+                return '%s-page-%s.xml' % (self.url.rsplit('.', 1)[0], self.page)
             self.stub_method(satisfaction.AtomParser, 'url_for_page', url_for_page)
         
             def child_url(self, resource):
@@ -58,7 +58,7 @@ class TestHelper(unittest.TestCase):
     
     def product(self):
         return satisfaction.Product('1234')
-
+    
     def topic(self):
         return satisfaction.Topic('1234')
 
@@ -76,18 +76,19 @@ class ProductWithTopicsTest(TestHelper):
     def withFixtures(self):
         self.useFixture(satisfaction.Product)
     
-    def test_can_retrieve_title(self):
+    def test_has_title(self):
         self.assertEqual('Wordtracker Keywords', self.product().title)
     
-    @unittest.skip('pending instantiation of topic from data')
-    def test_can_retrieve_topics(self):
+    def test_can_count_topics(self):
         self.assertEqual(3, self.product().topic_count)
+    
+    def test_can_iterate_over_topics(self):
         self.assertEqual(3, len(list(self.product().topics)))
         self.assertIsInstance(list(self.product().topics)[0], satisfaction.Topic)
 
 
 class MissingTopicTest(TestHelper):
-
+    
     @mock.patch('feedparser.parse', feedparser_404)
     def test_topic_not_found(self):
         with self.assertRaises(satisfaction.ResourceNotFound):
@@ -98,7 +99,7 @@ class TopicWithoutRepliesTest(TestHelper):
     
     def withFixtures(self):
         self.useFixture(satisfaction.Topic, 'without-replies')
-
+    
     def test_title_available(self):
         self.assertEqual('Fantastic improvement', self.topic().title)
     
@@ -115,14 +116,16 @@ class TopicWithRepliesTest(TestHelper):
     def withFixtures(self):
         self.useFixture(satisfaction.Topic, 'with-replies')
     
-    def test_replies_found(self):
+    def test_can_count_replies(self):
         self.assertEqual(3, self.topic().reply_count)
+    
+    def test_can_iterate_over_replies(self):
         self.assertEqual(3, len(list(self.topic().replies)))
+        self.assertIsInstance(list(self.topic().replies)[0], satisfaction.Reply)
     
     def test_topic_not_included_in_replies(self):
-        extract_content = lambda reply: reply.content[0]['value']
-        reply_messages = map(extract_content, self.topic().replies)
-        self.assertNotIn(self.topic().content, reply_messages)
+        replies = map(lambda reply: reply.content, self.topic().replies)
+        self.assertNotIn(self.topic().content, replies)
 
 
 class TopicWithMultiplePagesOfRepliesTest(TestHelper):

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <feed 
+   xmlns="http://www.w3.org/2005/Atom" 
+   xmlns:sfn="http://api.getsatisfaction.com/schema/0.1" 
+   xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/"
+   xmlns:thr="http://purl.org/syndication/thread/1.0">
+  <id>http://api.getsatisfaction.com/products/54589/topics?page=1</id>
+  <title>Topics for Link Builder</title>
+  <updated>1969-12-31T16:00:00Z</updated>
+  <link rel="self" href="http://api.getsatisfaction.com/products/54589/topics?page=1" type="application/atom+xml"/>
+<link rel="first" href="http://api.getsatisfaction.com/products/54589/topics?page=1" type="application/atom+xml"/>
+<link rel="last" href="http://api.getsatisfaction.com/products/54589/topics?page=1" type="application/atom+xml"/>
+      
+    
+  
+  <opensearch:totalResults>3</opensearch:totalResults>
+  
+    <sfn:question_count>1</sfn:question_count>
+    <sfn:idea_count>2</sfn:idea_count>
+    <sfn:problem_count>0</sfn:problem_count>
+    <sfn:talk_count>0</sfn:talk_count>
+    <sfn:unanswered_count>0</sfn:unanswered_count>
+  
+  
+  
+  
+
+
+<entry>
+
+  
+  
+  
+  <id>http://api.getsatisfaction.com/topics/801651</id>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/801651" type="application/atom+xml"/>
+  <link rel="topic_at_sfn" href="http://getsatisfaction.com/wordtracker/topics/not_sure_how_this_would_help_me" type="text/html"/>
+  <link rel="company" href="http://api.getsatisfaction.com/companies/30884" type="text/html"/>
+  <link rel="replies" href="http://api.getsatisfaction.com/topics/801651/replies" type="application/atom+xml"/>
+  <sfn:id>801651</sfn:id>
+  
+    
+  <title type="html">Not sure how this would help me</title>
+  <updated>2010-03-17T15:28:26Z</updated>
+  <published>2010-03-08T04:50:33Z</published>
+  
+  <author>
+   <name>Sharon Jackson</name>
+   <uri>http://api.getsatisfaction.com/people/729308</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>sharon_jackson</sfn:canonical_name>
+  </author>
+  
+  <content type="html">
+    
+    I see the referring domains...I see the inbound links. Very nice. So what does this tell me that I don't already know from other free in-bound link checkers?&lt;br /&gt;
+It would be really helpful if after clicking show links, that something like a McAfee Site Advisor would tell me if the inbound link was coming from a bad neighbourhood or not. At present, this would be nothing I would pay for. What am I missing??
+  </content>
+  
+  <sfn:topic_style>question</sfn:topic_style>
+  <sfn:user_defined_code>false</sfn:user_defined_code>
+  <sfn:status>complete</sfn:status>
+  <sfn:reply_count>1</sfn:reply_count>
+  <sfn:follower_count>2</sfn:follower_count>
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:me_too_count>1</sfn:me_too_count>
+  <sfn:most_recent_activity>comment</sfn:most_recent_activity>
+  
+  <sfn:tags></sfn:tags>
+  
+  
+  
+</entry>
+
+
+<entry>
+
+  
+  
+  
+  <id>http://api.getsatisfaction.com/topics/773764</id>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/773764" type="application/atom+xml"/>
+  <link rel="topic_at_sfn" href="http://getsatisfaction.com/wordtracker/topics/group_results_by_domain" type="text/html"/>
+  <link rel="company" href="http://api.getsatisfaction.com/companies/30884" type="text/html"/>
+  <link rel="replies" href="http://api.getsatisfaction.com/topics/773764/replies" type="application/atom+xml"/>
+  <sfn:id>773764</sfn:id>
+  
+    
+  <title type="html">Group results by domain</title>
+  <updated>2010-03-02T12:00:50Z</updated>
+  <published>2010-02-19T21:21:33Z</published>
+  
+  <author>
+   <name>nick</name>
+   <uri>http://api.getsatisfaction.com/people/810022</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>nick_536455</sfn:canonical_name>
+  </author>
+  
+  <content type="html">
+    
+    It'd make the results much easier to consume if they were grouped by domain.  Domains with only one page result could display the page url with the (visit site, visit page) links, but domains with multiple results could be expanded to reveal the individual pages (organized by rank).
+  </content>
+  
+  <sfn:topic_style>idea</sfn:topic_style>
+  <sfn:user_defined_code>false</sfn:user_defined_code>
+  <sfn:status></sfn:status>
+  <sfn:reply_count>2</sfn:reply_count>
+  <sfn:follower_count>3</sfn:follower_count>
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:me_too_count>1</sfn:me_too_count>
+  <sfn:most_recent_activity>comment</sfn:most_recent_activity>
+  
+  <sfn:tags></sfn:tags>
+  
+  
+  
+</entry>
+
+
+<entry>
+
+  
+  
+  
+  <id>http://api.getsatisfaction.com/topics/771922</id>
+  <link rel="topic" href="http://api.getsatisfaction.com/topics/771922" type="application/atom+xml"/>
+  <link rel="topic_at_sfn" href="http://getsatisfaction.com/wordtracker/topics/avoid_leaving_results" type="text/html"/>
+  <link rel="company" href="http://api.getsatisfaction.com/companies/30884" type="text/html"/>
+  <link rel="replies" href="http://api.getsatisfaction.com/topics/771922/replies" type="application/atom+xml"/>
+  <sfn:id>771922</sfn:id>
+  
+    
+  <title type="html">Avoid leaving results</title>
+  <updated>2010-02-18T20:20:02Z</updated>
+  <published>2010-02-18T19:50:48Z</published>
+  
+  <author>
+   <name>David</name>
+   <uri>http://api.getsatisfaction.com/people/1055695</uri>
+   <sfn:avatar>http://getsatisfaction.com/images/user_default_medium.png</sfn:avatar>
+   <sfn:canonical_name>david_780556</sfn:canonical_name>
+  </author>
+  
+  <content type="html">
+    
+    It would be better if the visit site/page links opened in a new tab/window.
+  </content>
+  
+  <sfn:topic_style>idea</sfn:topic_style>
+  <sfn:user_defined_code>false</sfn:user_defined_code>
+  <sfn:status></sfn:status>
+  <sfn:reply_count>2</sfn:reply_count>
+  <sfn:follower_count>2</sfn:follower_count>
+  <sfn:flag_count>0</sfn:flag_count>
+  <sfn:me_too_count>1</sfn:me_too_count>
+  <sfn:most_recent_activity>comment</sfn:most_recent_activity>
+  
+  <sfn:tags></sfn:tags>
+  
+  
+  
+</entry>
+</feed>
