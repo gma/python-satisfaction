@@ -129,12 +129,15 @@ class Company(HtmlResource):
     
     URL = 'http://api.getsatisfaction.com/companies/%(id)s'
     
-    def __init__(self, resource_id):
-        HtmlResource.__init__(self, resource_id)
+    def __init__(self, name):
+        self.name = name
         self.parser = HtmlParser(self.url())
     
+    def url(self):
+        return self.URL % {'id': self.name}
+
     @property
-    def id(self):
+    def resource_id(self):
         return self.parser.tags('span.id')[0].text_content()
     
     @property
