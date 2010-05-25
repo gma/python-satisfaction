@@ -9,7 +9,7 @@ class ResourceNotFound(RuntimeError):
     pass
 
 
-class Parser:
+class Parser(object):
     
     def __init__(self, url, child_cls=None):
         self.url = url
@@ -84,7 +84,7 @@ class AtomParser(Parser):
         return self.document.entries[0]
 
 
-class Resource:
+class Resource(object):
     
     def __init__(self, resource_id):
         self.resource_id = resource_id
