@@ -5,6 +5,7 @@ import mock
 
 import satisfaction
 
+
 def urlopen_404(url):
     headers = mock.Mock()
     headers.getheader.return_value = '404'
@@ -76,6 +77,9 @@ class CompanyWithProductsTest(TestHelper):
     
     def withFixtures(self):
         self.useFixture(satisfaction.Company)
+    
+    def test_has_id(self):
+        self.assertEqual('30884', self.company().id)
     
     def test_has_title(self):
         self.assertEqual('Wordtracker', self.company().title)

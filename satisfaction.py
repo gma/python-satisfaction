@@ -31,6 +31,9 @@ class HtmlParser(Parser):
             raise ResourceNotFound(self.url)
         self._document = lxml.html.document_fromstring(response.read())
     
+    def tags(self, selector):
+        return self.document.cssselect(selector)
+    
     def title(self):
         return self.document.cssselect('title')[0].text_content()
     
@@ -129,6 +132,10 @@ class Company(HtmlResource):
     def __init__(self, resource_id):
         HtmlResource.__init__(self, resource_id)
         self.parser = HtmlParser(self.url())
+    
+    @property
+    def id(self):
+        return self.parser.tags('span.id')[0].text_content()
     
     @property
     def products(self):
