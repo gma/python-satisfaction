@@ -158,6 +158,10 @@ class TopicWithRepliesTest(TestHelper):
     def test_topic_not_included_in_replies(self):
         replies = map(lambda reply: reply.content, self.topic().replies)
         self.assertNotIn(self.topic().content, replies)
+    
+    def test_can_get_content_of_reply(self):
+        first_reply = list(self.topic().replies)[0]
+        self.assertIn('thanks for writing', first_reply.content)
 
 
 class TopicWithMultiplePagesOfRepliesTest(TestHelper):
