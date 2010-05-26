@@ -186,11 +186,11 @@ class Message(object):
         return datetime.datetime(*timetuple[0:6])
     
     @property
-    def updated_at(self):
+    def updated(self):
         return self.parse_time(self.entry.updated)
     
     @property
-    def published_at(self):
+    def published(self):
         return self.parse_time(self.entry.published)
 
 
