@@ -169,13 +169,7 @@ class Product(HtmlResource):
         return iter(self.topic_parser)
 
 
-class Topic(AtomResource):
-    
-    URL = 'http://api.getsatisfaction.com/topics/%(id)s'
-    
-    def __init__(self, resource_id):
-        AtomResource.__init__(self, resource_id)
-        self.parser = AtomParser(self.url(), Reply, first_child_entry=1)
+class Message(object):
     
     @property
     def title(self):
@@ -184,6 +178,15 @@ class Topic(AtomResource):
     @property
     def content(self):
         return self.entry.content[0]['value']
+
+
+class Topic(AtomResource, Message):
+    
+    URL = 'http://api.getsatisfaction.com/topics/%(id)s'
+    
+    def __init__(self, resource_id):
+        AtomResource.__init__(self, resource_id)
+        self.parser = AtomParser(self.url(), Reply, first_child_entry=1)
     
     @property
     def reply_count(self):
@@ -194,12 +197,6 @@ class Topic(AtomResource):
         return iter(self.parser)
 
 
-class Reply(AtomResource):
+class Reply(AtomResource, Message):
     
-    @property
-    def title(self):
-        return self.entry.title
-    
-    @property
-    def content(self):
-        return self.entry.content[0]['value']
+    pass
