@@ -1,3 +1,4 @@
+import datetime
 import os
 import unittest2 as unittest
 
@@ -136,6 +137,11 @@ class TopicWithoutRepliesTest(TestHelper):
     
     def test_content_available(self):
         self.assertIn('Well done!', self.topic().content)
+    
+    def test_can_retrieve_dates(self):
+        moment = datetime.datetime(2009, 5, 14, 17, 42, 27)
+        self.assertEqual(self.topic().updated_at, moment)
+        self.assertEqual(self.topic().published_at, moment)
     
     def test_no_replies_found(self):
         self.assertEqual(0, self.topic().reply_count)

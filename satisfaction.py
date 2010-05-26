@@ -1,3 +1,5 @@
+import datetime
+import time
 import urllib
 
 import feedparser
@@ -178,6 +180,18 @@ class Message(object):
     @property
     def content(self):
         return self.entry.content[0]['value']
+
+    def parse_time(self, isodate):
+        timetuple = time.strptime(isodate, '%Y-%m-%dT%H:%M:%SZ')
+        return datetime.datetime(*timetuple[0:6])
+    
+    @property
+    def updated_at(self):
+        return self.parse_time(self.entry.updated)
+    
+    @property
+    def published_at(self):
+        return self.parse_time(self.entry.published)
 
 
 class Topic(AtomResource, Message):
