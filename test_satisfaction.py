@@ -160,8 +160,12 @@ class TopicWithRepliesTest(TestHelper):
         self.assertNotIn(self.topic().content, replies)
     
     def test_can_get_content_of_reply(self):
-        first_reply = list(self.topic().replies)[0]
-        self.assertIn('thanks for writing', first_reply.content)
+        reply = list(self.topic().replies)[0]
+        self.assertIn('thanks for writing', reply.content)
+    
+    def test_can_get_title_of_reply(self):
+        reply = list(self.topic().replies)[0]
+        self.assertEqual('Mal Darwen responded to "Finding KEI"', reply.title)
 
 
 class TopicWithMultiplePagesOfRepliesTest(TestHelper):

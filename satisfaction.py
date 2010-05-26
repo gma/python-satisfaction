@@ -197,5 +197,9 @@ class Topic(AtomResource):
 class Reply(AtomResource):
     
     @property
+    def title(self):
+        return self.entry.title
+    
+    @property
     def content(self):
         return self.entry.content[0]['value']
