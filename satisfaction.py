@@ -164,7 +164,7 @@ class Product(HtmlResource):
     
     @property
     def topic_count(self):
-        return int(self.topic_parser.document.feed['totalresults'])
+        return int(self.topic_parser.document.feed['opensearch_totalresults'])
     
     @property
     def topics(self):
@@ -204,7 +204,7 @@ class Topic(AtomResource, Message):
     
     @property
     def reply_count(self):
-        return int(self.entry['reply_count'])
+        return int(self.entry['sfn_reply_count'])
     
     @property
     def replies(self):
